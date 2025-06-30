@@ -1,48 +1,46 @@
-# 🧾 LinkShortener Pro
+# 🚀 URL Shortener Web Application
 
-A modern URL shortening service with real-time analytics built using React + Node.js. Features include custom short codes, click statistics tracking, and responsive UI components.
-
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/yourname/linkshortener-pro/main.yml?branch=main)
-![License](https://img.shields.io/badge/License-MIT-blue)
+A modern URL shortening service built with a **React frontend** and **Node.js/Express backend**, featuring real-time statistics tracking and a clean user interface.
 
 ---
 
-## 📁 Project Structure
+## 📁 Folder Structure
 
 ```bash
-.
-├── README.md                   # This documentation file
-├── Screenshorts/               # 📸 Demo screenshots folder
-│   ├── output1.png             # Example short URL preview
+├── README.md                   # Main project documentation
+├── Screenshorts/               # Application screenshots
+│   ├── output1.png             # Example shortened URL result
 │   ├── output2.png             # Dashboard view
-│   ├── stats_after_clicking.png# Post-click analytics
-│   └── stats_before_clicks.png# Pre-click statistics view
-├── client/                     # 🌐 Frontend (React + Vite)
-│   ├── .gitignore              # Frontend-specific ignores
-│   ├── README.md               # Client-specific documentation
+│   ├── stats_after_clicking.png# Post-click statistics
+│   └── stats_before_clicks.png# Initial statistics view
+├── client/                     # React frontend application
+│   ├── .gitignore              # Frontend-specific git ignore
+│   ├── README.md               # Frontend documentation
 │   ├── eslint.config.js        # Code quality configuration
-│   ├── index.html              # Entry point
-│   ├── package.json            # Dev dependencies (React, Vite)
+│   ├── index.html              # Entry point HTML
+│   ├── package-lock.json       # Dependency lockfile
+│   ├── package.json            # Project metadata + scripts
 │   ├── public/                 # Static assets
 │   ├── src/                    # Source code
-│   │   ├── App.jsx             # Main component
-│   │   ├── assets/             # Logo and icons
-│   │   ├── components/         # Reusable UI elements
-│   │   │   ├── Statistics.jsx  # Analytics component
+│   │   ├── App.jsx             # Main application component
+│   │   ├── assets/             # UI assets
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── Statistics.jsx  # URL analytics component
 │   │   │   └── UrlShortenerForm.jsx # URL input form
-│   │   └── main.jsx            # App bootstrap
-│   └── vite.config.js          # Build configuration
-└── server/                     # ⚙️ Backend (Node.js + Express)
-    ├── .gitignore              # Server-specific ignores
-    ├── middleware/             # Request processing
-    │   └── logger.js           # Request logging
+│   │   └── main.jsx            # Application bootstrap
+│   └── vite.config.js          # Vite build configuration
+└── server/                     # Node.js backend
+    ├── .gitignore              # Backend-specific git ignore
+    ├── middleware/             # Request processing layers
+    │   └── logger.js           # Request logging middleware
     ├── models/                 # Data layer
-    │   └── urlStore.js         # URL database/manager
-    ├── package.json            # Server dependencies
+    │   └── urlStore.js         # URL storage & management
+    ├── package-lock.json       # Backend dependencies
+    ├── package.json            # Backend project metadata
     ├── routes/                 # API endpoints
-    │   └── urlRoutes.js        # URL management routes
-    ├── server.js               # Entry point
-    └── server.log              # Runtime logs
+    │   └── urlRoutes.js        # URL shortening API routes
+    ├── server.js               # Main server entry point
+    └── server.log              # Server runtime logs
 ```
 
 ---
@@ -51,75 +49,88 @@ A modern URL shortening service with real-time analytics built using React + Nod
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/linkshortener-pro.git
-cd linkshortener-pro
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
 
-# Install client dependencies
+# Install frontend dependencies
 cd client
 npm install
 
-# Install server dependencies
+# Install backend dependencies
 cd ../server
 npm install
 ```
 
-### To Run Locally:
+### Run the Application
 
 ```bash
-# Start frontend (port 5173)
-cd client
-npm run dev
+# In client directory
+npm run dev        # Starts Vite development server on http://localhost:5173
 
-# Start backend (port 3000)
-cd ../server
-npm start
+# In server directory
+node server.js      # Starts Express server on http://localhost:3000
 ```
 
 ---
 
 ## 🛠️ Technologies Used
 
-**Frontend Stack:**
-- React 18+ (with JSX)
-- Vite 4 (build tool)
-- ES Lint (code quality)
-- Modern CSS (Tailwind/CSS-in-JS)
+**Frontend:**
+- React (with JSX)
+- Vite
+- ES6+ JavaScript
+- CSS/JS Linting (ESLint)
 
-**Backend Stack:**
-- Node.js 18+
-- Express.js 5
-- Express Router
-- File-based storage (urlStore.js)
+**Backend:**
+- Node.js
+- Express.js
+- Custom URL routing
+- Request logging middleware
+
+**Development Tools:**
+- Git version control
+- NPM package manager
+- Vite build tool
 
 ---
 
 ## 🧪 Available Scripts
 
-**Client:**
+**Frontend (from `client/` directory):**
 ```bash
-npm run dev    # Development server
-npm run build  # Production build
+npm run dev    # Development mode with hot-reloading
+npm run build  # Production build (generates dist/)
 npm run lint   # Code quality check
 ```
 
-**Server:**
+**Backend (from `server/` directory):**
 ```bash
-npm start      # Production mode
-npm run dev    # Development mode (with nodemon)
-npm run logs   # View server.log contents
+node server.js        # Start production server
+DEBUG=urlshortener node server.js  # Start with debug logging
 ```
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
 ## 👤 Author
 
 Developed by [Your Name]  
-LinkedIn: [your-profile](https://linkedin.com/in/yourname) | Twitter: [@yourhandle](https://twitter.com/yourhandle)
+GitHub: [@your-username](https://github.com/your-username)  
+LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-profile)
 
-> _"Shorten links, grow your reach!"_ 🚀
+---
+
+## 📌 Notes
+
+- Screenshots in `Screenshorts/` folder demonstrate core functionality
+- Server uses simple in-memory storage (`urlStore.js`) - consider adding database persistence for production
+- Production deployment would require environment variables for security (not included in this tree)
+
+![Build Status](https://img.shields.io/badge/build-success-green)  
+![React](https://img.shields.io/badge/react-18.2-blue)  
+![Node.js](https://img.shields.io/badge/node.js-18.16.0-green)
