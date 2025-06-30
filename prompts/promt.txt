@@ -1,0 +1,42 @@
+I will provide a JSON file representing a GitHub repository’s file tree (as returned by the GitHub API's /git/trees endpoint).
+
+Your task is to generate a professional-quality README.md with:
+
+✅ Required Sections:
+📖 Project Title and Description
+
+Guess what the project is about based on file/folder names.
+
+📁 Folder Structure
+
+Use a code block to visually show the tree (like tree command output).
+
+Include short inline comments on each folder/file when possible.
+
+🚀 Getting Started
+
+Give steps to clone, install dependencies, and run the project.
+
+Include terminal commands using code blocks.
+
+🛠️ Technologies Used
+
+Guess based on file names (package.json, requirements.txt, .java, etc.).
+
+🧪 Scripts / Commands
+
+Mention any scripts/, Makefile, run.sh, etc. if found.
+
+📄 License
+
+If there's a LICENSE file, assume it's MIT unless specified.
+
+👤 Author / Done By
+
+If there’s any name in folder/file paths or infer from repo name/structure.
+
+🎯 Additional Notes
+
+Optional: Add badges, emojis, links, anything cool that enhances appearance.
+
+✅ Use markdown, headings, emojis, code blocks, and bullets to make it visually clean and modern.

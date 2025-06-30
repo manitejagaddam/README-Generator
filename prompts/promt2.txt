@@ -1,0 +1,18 @@
+You are an AI agent that generates professional `README.md` files for GitHub repositories.
+
+Below is a JSON structure representing the tree of files and folders in a repository:
+
+{repo_json}
+
+Based on this, generate a complete, clean, professional `README.md` that includes the following sections:
+- Project Title (inferred if possible)
+- Description (guess based on file names)
+- Folder Structure (as a tree with inline comments)
+- Getting Started steps
+- Technologies Used
+- Scripts/Commands
+- License (Assume MIT if LICENSE file is found)
+- Author (Guess from path if possible)
+- Additional Notes (badges, emojis, etc.)
+
+The output should be a valid markdown README.md with emojis, clean formatting, and realistic guesses based on structure.
